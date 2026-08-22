@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indiana Fever Schedule 2026 | Games, Times & Results</title>
+<meta name="description" content="Check the Indiana Fever 2026 schedule, upcoming games, game times, TV information and recent results.">
+<link rel="canonical" href="https://feverwatch.example.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Indiana Fever Schedule 2026 | Games, Times & Results">
+<meta property="og:description" content="Complete schedule, next game, game times, TV information and recent results for the Indiana Fever.">
+<meta property="og:url" content="https://feverwatch.example.com/">
+<!-- TODO: replace with a real 1200x630 social share image before launch -->
+<meta property="og:image" content="/og-image.jpg">
+<meta property="og:site_name" content="Fever Watch">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Indiana Fever Schedule 2026 | Games, Times & Results">
+<meta name="twitter:description" content="Complete schedule, next game, game times, TV information and recent results for the Indiana Fever.">
+<meta name="twitter:image" content="/og-image.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------------------------------------------------------
+     TOKENS
+  --------------------------------------------------------- */
+  :root{
+    --bg: #0a0a0c;
+    --bg-elevated: #131217;
+    --surface: #1b1a20;
+    --surface-2: #232129;
+    --border: #2d2b34;
+    --white: #f7f5f1;
+    --muted: #9c9aa5;
+    --muted-2: #6f6d78;
+    --flame-1: #ff5a36;
+    --flame-2: #ffc24b;
+    --win: #35d08a;
+    --loss: #f14c6b;
+    --focus: #ffc24b;
+
+    --font-display: 'Anton', sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --radius: 14px;
+    --radius-sm: 8px;
+    --container: 640px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--white);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  img{ max-width:100%; display:block; }
+  a{ color: inherit; }
+
+  :focus-visible{
+    outline: 3px solid var(--focus);
+    outline-offset: 2px;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  .wrap{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .eyebrow{
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--flame-2);
+  }
+
+  .h1{
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    line-height: 0.95;
+    font-size: clamp(32px, 9vw, 46px);
+    margin: 10px 0 8px;
+  }
+
+  .h2{
+    font-family: var(--font-display);
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: clamp(22px, 6vw, 28px);
+    letter-spacing: 0.01em;
+    margin: 0 0 4px;
+  }
+
+  .lede{
+    color: var(--muted);
+    font-size: 15px;
+    max-width: 46ch;
+    margin: 0 0 22px;
+  }
+
+  .btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 15px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    text-decoration:none;
+    border: none;
+    cursor:pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn:active{ transform: scale(0.98); }
+  .btn-primary{
+    background: linear-gradient(90deg, var(--flame-1), var(--flame-2));
+    color: #14100a;
+    box-shadow: 0 8px 24px -8px rgba(255,90,54,0.55);
+  }
+  .btn-secondary{
+    background: transparent;
+    color: var(--white);
+    border: 1px solid var(--border);
+  }
+  .btn-row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-top: 20px;
+  }
+
+  /* ---------------------------------------------------------
+     TOP BAR
+  --------------------------------------------------------- */
+  .topbar{
+    position: sticky;
+    top:0;
+    z-index: 50;
+    background: rgba(10,10,12,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar-inner{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 14px 20px;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 0.02em;
+  }
+  .brand-mark{
+    width:22px; height:22px;
+    border-radius: 6px;
+    background: linear-gradient(135deg, var(--flame-1), var(--flame-2));
+    flex-shrink:0;
+  }
+  .topnav{
+    display:flex;
+    gap: 18px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .topnav a{ text-decoration:none; color: var(--muted); }
+  .topnav a:hover{ color: var(--white); }
+  @media (max-width: 420px){
+    .topnav{ display:none; }
+  }
+
+  .disclaimer-strip{
+    background: var(--bg-elevated);
+    border-bottom: 1px solid var(--border);
+    padding: 8px 20px;
+    text-align:center;
+    font-size: 12px;
+    color: var(--muted-2);
+  }
+
+  /* ---------------------------------------------------------
+     HERO
+  --------------------------------------------------------- */
+  .hero{
+    padding: 28px 0 8px;
+    background:
+      radial-gradient(120% 100% at 50% -10%, rgba(255,90,54,0.16), transparent 60%),
+      var(--bg);
+  }
+
+  /* ---------------------------------------------------------
+     SCOREBOARD (signature element)
+  --------------------------------------------------------- */
+  .scoreboard{
+    position: relative;
+    margin-top: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow:hidden;
+    background-image:
+      radial-gradient(rgba(255,255,255,0.035) 1px, transparent 1px);
+    background-size: 10px 10px;
+  }
+  .scoreboard::before{
+    content:"";
+    position:absolute;
+    top:0; left:0; right:0;
+    height:4px;
+    background: linear-gradient(90deg, var(--flame-1), var(--flame-2));
+  }
+  .scoreboard-head{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 16px 18px 0;
+  }
+  .tag{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--flame-2);
+    font-weight: 600;
+  }
+  .tag-live{ color: var(--win); }
+  .venue-tag{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    text-align:right;
+  }
+
+  .matchup{
+    padding: 14px 18px 6px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 18px;
+    text-align:center;
+  }
+  .matchup-team{
+    flex:1;
+    min-width:0;
+  }
+  .matchup-abbr{
+    font-family: var(--font-display);
+    font-size: clamp(30px, 11vw, 42px);
+    letter-spacing: 0.02em;
+    line-height:1;
+  }
+  .matchup-name{
+    font-size: 12px;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .matchup-at{
+    font-family: var(--font-mono);
+    color: var(--muted-2);
+    font-size: 13px;
+    padding-top: 2px;
+  }
+
+  .game-datetime{
+    text-align:center;
+    padding: 6px 18px 4px;
+  }
+  .game-date{
+    font-family: var(--font-mono);
+    font-size: 14px;
+    color: var(--white);
+    font-weight: 600;
+    letter-spacing: 0.03em;
+  }
+  .game-time{
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--muted);
+    margin-top: 2px;
+  }
+
+  .countdown{
+    display:flex;
+    justify-content:center;
+    gap: 10px;
+    padding: 16px 18px 4px;
+  }
+  .countdown-unit{
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 4px;
+    width: 62px;
+    text-align:center;
+  }
+  .countdown-num{
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--flame-2);
+    font-variant-numeric: tabular-nums;
+  }
+  .countdown-label{
+    font-family: var(--font-mono);
+    font-size: 9px;
+    text-transform: uppercase;
+    color: var(--muted-2);
+    letter-spacing: 0.08em;
+    margin-top: 2px;
+  }
+
+  .scoreboard-foot{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    gap: 10px;
+    padding: 16px 18px 18px;
+    border-top: 1px solid var(--border);
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .watch-pill{
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--white);
+  }
+  .watch-pill svg{ width:13px; height:13px; flex-shrink:0; }
+
+  /* ---------------------------------------------------------
+     QUICK ACTIONS (add to calendar / share)
+  --------------------------------------------------------- */
+  .quick-actions{
+    display:flex;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .action-btn{
+    flex:1;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:7px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 13px;
+    padding: 12px 10px;
+    border-radius: var(--radius-sm);
+    cursor:pointer;
+    transition: border-color .15s ease, background .15s ease;
+  }
+  .action-btn svg{ width:16px; height:16px; flex-shrink:0; }
+  .action-btn:hover{ border-color: var(--flame-2); }
+  .action-btn:active{ transform: scale(0.98); }
+  .action-btn.copied{
+    border-color: var(--win);
+    color: var(--win);
+  }
+
+  /* ---------------------------------------------------------
+     STICKY MINI COUNTDOWN (appears once hero scrolls away)
+  --------------------------------------------------------- */
+  .sticky-bar{
+    position: fixed;
+    left:0; right:0; bottom:0;
+    z-index: 60;
+    background: rgba(19,18,23,0.92);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid var(--border);
+    transform: translateY(110%);
+    transition: transform .25s ease;
+    padding-bottom: env(safe-area-inset-bottom, 0);
+  }
+  .sticky-bar.visible{ transform: translateY(0); }
+  .sticky-bar-inner{
+    max-width: var(--container);
+    margin: 0 auto;
+    padding: 10px 16px;
+    display:flex;
+    align-items:center;
+    gap: 12px;
+  }
+  .sticky-bar-info{
+    flex:1;
+    min-width:0;
+  }
+  .sticky-bar-label{
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--flame-2);
+  }
+  .sticky-bar-matchup{
+    font-weight: 700;
+    font-size: 13.5px;
+    white-space: nowrap;
+    overflow:hidden;
+    text-overflow: ellipsis;
+  }
+  .sticky-bar-cd{
+    font-family: var(--font-mono);
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--flame-2);
+    font-variant-numeric: tabular-nums;
+    flex-shrink:0;
+  }
+  .sticky-bar-jump{
+    flex-shrink:0;
+    background: linear-gradient(90deg, var(--flame-1), var(--flame-2));
+    color: #14100a;
+    font-weight: 700;
+    font-size: 12px;
+    text-decoration:none;
+    padding: 8px 12px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+
+  /* ---------------------------------------------------------
+     QUICK STATS
+  --------------------------------------------------------- */
+  .stats-strip{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 22px 0 6px;
+  }
+  .stat-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 8px;
+    text-align:center;
+  }
+  .stat-num{
+    font-family: var(--font-display);
+    font-size: 22px;
+    color: var(--white);
+  }
+  .stat-label{
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    text-transform: uppercase;
+    color: var(--muted);
+    letter-spacing: 0.05em;
+    margin-top: 2px;
+  }
+  @media (max-width: 380px){
+    .stats-strip{ grid-template-columns: repeat(2,1fr); }
+  }
+
+  /* ---------------------------------------------------------
+     SECTIONS
+  --------------------------------------------------------- */
+  section{ padding: 44px 0; }
+  section + section{ border-top: 1px solid var(--border); }
+
+  /* Tabs */
+  .tabs{
+    display:flex;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .tab-btn{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: transparent;
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 8px 16px;
+    border-radius: 999px;
+    cursor:pointer;
+  }
+  .tab-btn[aria-selected="true"]{
+    background: var(--white);
+    color: var(--bg);
+    border-color: var(--white);
+    font-weight: 700;
+  }
+
+  .game-card{
+    display:flex;
+    align-items:center;
+    gap: 14px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .game-card-date{
+    font-family: var(--font-mono);
+    font-size: 12px;
+    color: var(--muted);
+    width: 54px;
+    flex-shrink:0;
+    line-height:1.3;
+  }
+  .game-card-date b{
+    display:block;
+    color: var(--white);
+    font-size: 15px;
+  }
+  .game-card-mid{ flex:1; min-width:0; }
+  .game-card-opp{
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .game-card-opp span{
+    font-weight: 500;
+    color: var(--muted);
+    font-size: 12px;
+  }
+  .game-card-meta{
+    font-family: var(--font-mono);
+    font-size: 11.5px;
+    color: var(--muted-2);
+    margin-top: 3px;
+  }
+  .game-card-right{
+    text-align:right;
+    flex-shrink:0;
+  }
+  .badge{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 9px;
+    border-radius: 999px;
+    display:inline-block;
+  }
+  .badge-win{ background: rgba(53,208,138,0.15); color: var(--win); }
+  .badge-loss{ background: rgba(241,76,107,0.15); color: var(--loss); }
+  .badge-upcoming{ background: rgba(255,194,75,0.15); color: var(--flame-2); }
+  .game-score{
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--white);
+    margin-top: 4px;
+  }
+
+  #schedule-list{ display:none; }
+  #schedule-list.active{ display:block; }
+
+  .load-more{
+    width:100%;
+    background: var(--surface-2);
+    border: 1px dashed var(--border);
+    color: var(--muted);
+    font-family: var(--font-mono);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 12px;
+    border-radius: var(--radius-sm);
+    cursor:pointer;
+    margin-top: 4px;
+  }
+
+  /* Recent results horizontal scroll */
+  .results-scroll{
+    display:flex;
+    gap: 12px;
+    overflow-x: auto;
+    padding-bottom: 6px;
+    margin: 0 -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    scroll-snap-type: x proximity;
+  }
+  .result-card{
+    scroll-snap-align: start;
+    flex: 0 0 150px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 14px;
+  }
+  .result-card .badge{ margin-bottom: 10px; }
+  .result-score{
+    font-family: var(--font-display);
+    font-size: 24px;
+  }
+  .result-opp{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 6px;
+  }
+  .result-date{
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    color: var(--muted-2);
+    margin-top: 2px;
+  }
+
+  /* Where to watch */
+  .watch-card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+  .watch-row{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+  }
+  .watch-row:last-child{ border-bottom:none; }
+  .watch-row-label{ color: var(--muted); }
+  .watch-row-value{
+    font-family: var(--font-mono);
+    font-weight: 600;
+    text-align:right;
+  }
+
+  /* Team info */
+  .team-card{
+    display:flex;
+    gap: 16px;
+    align-items:center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px;
+  }
+  .team-icon{
+    width: 52px; height:52px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, var(--flame-1), var(--flame-2));
+    flex-shrink:0;
+  }
+  .team-name{ font-family: var(--font-display); font-size: 20px; text-transform:uppercase; }
+  .team-sub{ color: var(--muted); font-size: 13px; margin-top: 2px; }
+
+  /* Ad slot (reserved, inactive) */
+  .ad-slot{
+    display:none; /* keep hidden until monetization is enabled */
+    border: 1px dashed var(--border);
+    border-radius: var(--radius-sm);
+    padding: 30px;
+    text-align:center;
+    color: var(--muted-2);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    margin: 20px 0;
+  }
+
+  /* Final CTA */
+  .final-cta{
+    text-align:center;
+    padding: 50px 0 60px;
+  }
+
+  footer{
+    border-top: 1px solid var(--border);
+    padding: 26px 0 40px;
+    text-align:center;
+  }
+  .footer-disclaimer{
+    font-size: 12px;
+    color: var(--muted-2);
+    max-width: 46ch;
+    margin: 0 auto 10px;
+  }
+  .footer-links{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted-2);
+  }
+</style>
+</head>
+<body>
+
+<div class="disclaimer-strip">Independent fan site. Not affiliated with or endorsed by the Indiana Fever or WNBA.</div>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span> Fever Watch</div>
+    <nav class="topnav">
+      <a href="#next-game">Next Game</a>
+      <a href="#schedule">Schedule</a>
+      <a href="#watch">Watch</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">Indiana Fever &middot; 2026 Season</p>
+      <h1 class="h1">Indiana Fever<br>Schedule 2026</h1>
+      <p class="lede">Complete schedule, next game, game times, TV information and recent results — built for fans who need the facts fast.</p>
+
+      <div id="next-game" class="scoreboard">
+        <div class="scoreboard-head">
+          <span class="tag" id="sb-tag">Next Game</span>
+          <span class="venue-tag" id="sb-venue"></span>
+        </div>
+
+        <div class="matchup">
+          <div class="matchup-team">
+            <div class="matchup-abbr">IND</div>
+            <div class="matchup-name">Indiana Fever</div>
+          </div>
+          <div class="matchup-at" id="sb-atvs">@</div>
+          <div class="matchup-team">
+            <div class="matchup-abbr" id="sb-opp-abbr">—</div>
+            <div class="matchup-name" id="sb-opp-name">—</div>
+          </div>
+        </div>
+
+        <div class="game-datetime">
+          <div class="game-date" id="sb-date">—</div>
+          <div class="game-time" id="sb-time">—</div>
+        </div>
+
+        <div class="countdown" id="countdown" aria-live="polite">
+          <div class="countdown-unit"><div class="countdown-num" id="cd-d">00</div><div class="countdown-label">Days</div></div>
+          <div class="countdown-unit"><div class="countdown-num" id="cd-h">00</div><div class="countdown-label">Hrs</div></div>
+          <div class="countdown-unit"><div class="countdown-num" id="cd-m">00</div><div class="countdown-label">Min</div></div>
+          <div class="countdown-unit"><div class="countdown-num" id="cd-s">00</div><div class="countdown-label">Sec</div></div>
+        </div>
+
+        <div class="scoreboard-foot">
+          <span class="watch-pill" id="sb-watch">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+            <span id="sb-watch-text">—</span>
+          </span>
+          <span class="venue-tag" id="sb-record">—</span>
+        </div>
+      </div>
+
+      <div class="quick-actions">
+        <button class="action-btn" id="btn-add-calendar" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          Add to Calendar
+        </button>
+        <button class="action-btn" id="btn-share" type="button">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8a3 3 0 1 0-2.83-4H15a3 3 0 0 0 .09 4.26L8.91 11.7a3 3 0 1 0 0 4.6l6.18 3.44a3 3 0 1 0 .99-1.76L9.9 14.54a3 3 0 0 0 0-1.08l6.18-3.44c.57.6 1.35.98 2.22.98"/><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/></svg>
+          <span id="share-btn-text">Share</span>
+        </button>
+      </div>
+
+      <div class="btn-row">
+        <a href="#schedule" class="btn btn-primary">View Full Schedule</a>
+        <a href="#watch" class="btn btn-secondary">Where to Watch</a>
+      </div>
+
+      <div class="stats-strip" id="quick-stats">
+        <!-- injected by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SCHEDULE ============ -->
+  <section id="schedule">
+    <div class="wrap">
+      <p class="eyebrow">2026 Regular Season</p>
+      <h2 class="h2">Full Schedule</h2>
+      <p class="lede">44 games. Tap a tab to switch between what's coming up and what's already been played.</p>
+
+      <div class="tabs" role="tablist">
+        <button class="tab-btn" id="tab-upcoming" role="tab" aria-selected="true">Upcoming</button>
+        <button class="tab-btn" id="tab-results" role="tab" aria-selected="false">Results</button>
+      </div>
+
+      <div id="schedule-list-upcoming" class="schedule-panel"></div>
+      <div id="schedule-list-results" class="schedule-panel" style="display:none;"></div>
+      <button class="load-more" id="load-more-results" style="display:none;">Show earlier games</button>
+    </div>
+  </section>
+
+  <!-- ============ RECENT RESULTS ============ -->
+  <section id="results">
+    <div class="wrap">
+      <p class="eyebrow">Last 5 Games</p>
+      <h2 class="h2">Recent Results</h2>
+    </div>
+    <div class="wrap">
+      <div class="results-scroll" id="recent-results"></div>
+    </div>
+  </section>
+
+  <!-- ============ WHERE TO WATCH ============ -->
+  <section id="watch">
+    <div class="wrap">
+      <p class="eyebrow">Broadcast Info</p>
+      <h2 class="h2">Where to Watch Indiana Fever Games</h2>
+      <p class="lede">Every 2026 Fever game airs nationally or locally on one of the networks below. Check each game's card in the schedule for the exact channel — regional blackouts and last-minute network swaps are common in the WNBA, so treat this as a starting point.</p>
+
+      <div class="watch-card">
+        <div class="watch-row"><span class="watch-row-label">National TV</span><span class="watch-row-value">ABC · ESPN · ESPN2 · CBS · NBC</span></div>
+        <div class="watch-row"><span class="watch-row-label">Streaming</span><span class="watch-row-value">Prime Video · Peacock · Paramount+ · Disney+</span></div>
+        <div class="watch-row"><span class="watch-row-label">Local (Indianapolis)</span><span class="watch-row-value">WTHR Channel 13</span></div>
+        <div class="watch-row"><span class="watch-row-label">Every game, in-market</span><span class="watch-row-value">WNBA League Pass</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TEAM INFO ============ -->
+  <section id="team">
+    <div class="wrap">
+      <p class="eyebrow">Quick Facts</p>
+      <h2 class="h2">Team Info</h2>
+      <div class="team-card">
+        <span class="team-icon" aria-hidden="true"></span>
+        <div>
+          <div class="team-name">Indiana Fever</div>
+          <div class="team-sub">WNBA &middot; Indianapolis, Indiana</div>
+          <div class="team-sub">Home arena: Gainbridge Fieldhouse</div>
+        </div>
+      </div>
+
+      <!-- Reserved ad slot — disabled for launch, do not enable without a real ad tag -->
+      <div class="ad-slot">Ad slot reserved (inactive)</div>
+    </div>
+  </section>
+
+  <!-- ============ FINAL CTA ============ -->
+  <section class="final-cta">
+    <div class="wrap">
+      <h2 class="h2">Never Miss the Next Fever Game</h2>
+      <p class="lede" style="margin-left:auto;margin-right:auto;">Check the full Indiana Fever schedule, upcoming games and recent results.</p>
+      <div class="btn-row" style="justify-content:center;">
+        <a href="#schedule" class="btn btn-primary">View Schedule</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="sticky-bar" id="sticky-bar" aria-live="off">
+  <div class="sticky-bar-inner">
+    <div class="sticky-bar-info">
+      <div class="sticky-bar-label" id="sticky-tag">Next Game</div>
+      <div class="sticky-bar-matchup" id="sticky-matchup">—</div>
+    </div>
+    <div class="sticky-bar-cd" id="sticky-cd">—</div>
+    <a href="#next-game" class="sticky-bar-jump">Details</a>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-disclaimer">Independent fan site. Not affiliated with or endorsed by the Indiana Fever or WNBA. All game data sourced from official and publicly available schedules; broadcast details can change — always confirm with your provider before tipoff.</p>
+    <p class="footer-links">Fever Watch &middot; 2026</p>
+  </div>
+</footer>
+
+<script>
+/* =====================================================================
+   DATA LAYER
+   All sports data lives here, separate from rendering. This is the
+   only place that needs to change when a live sports API is wired in —
+   swap FEVER_DATA for an async fetch() that returns the same shape.
+   Times are ET (Eastern Time); ISO strings include the -04:00 (EDT)
+   offset so the countdown/rendering is correct in any visitor's
+   timezone.
+===================================================================== */
+const TEAM = {
+  name: "Indiana Fever",
+  league: "WNBA",
+  city: "Indianapolis, Indiana",
+  arena: "Gainbridge Fieldhouse"
+};
+
+const STANDINGS = {
+  wins: 24,
+  losses: 13,
+  conference: "Eastern",
+  conferenceRank: 4,
+  streak: "L1"
+};
+
+// away: true if Indiana is the visiting team for this game
+const GAMES = [
+  { date:"2026-05-09T13:00:00-04:00", opp:"Dallas Wings", oppAbbr:"DAL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ABC","Disney+"], status:"final", indScore:104, oppScore:107 },
+  { date:"2026-05-13T22:30:00-04:00", opp:"Los Angeles Sparks", oppAbbr:"LA", away:true, venue:"crypto.com Arena", city:"Los Angeles, CA", tv:["USA Network","Spectrum SportsNet"], status:"final", indScore:87, oppScore:78 },
+  { date:"2026-05-15T19:30:00-04:00", opp:"Washington Mystics", oppAbbr:"WSH", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ION","WNBA League Pass"], status:"final", indScore:102, oppScore:104 },
+  { date:"2026-05-17T18:00:00-04:00", opp:"Seattle Storm", oppAbbr:"SEA", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["NBC Sports","Peacock"], status:"final", indScore:89, oppScore:78 },
+  { date:"2026-05-20T19:00:00-04:00", opp:"Portland Fire", oppAbbr:"POR", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network"], status:"final", indScore:90, oppScore:73 },
+  { date:"2026-05-22T19:30:00-04:00", opp:"Golden State Valkyries", oppAbbr:"GS", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ION","WNBA League Pass"], status:"final", indScore:90, oppScore:82 },
+  { date:"2026-05-28T22:00:00-04:00", opp:"Golden State Valkyries", oppAbbr:"GS", away:true, venue:"Chase Center", city:"San Francisco, CA", tv:["Prime Video"], status:"final", indScore:88, oppScore:90 },
+  { date:"2026-05-30T20:00:00-04:00", opp:"Portland Fire", oppAbbr:"POR", away:true, venue:"Moda Center", city:"Portland, OR", tv:["CBS","Paramount+"], status:"final", indScore:84, oppScore:100 },
+  { date:"2026-06-04T19:00:00-04:00", opp:"Atlanta Dream", oppAbbr:"ATL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["Prime Video"], status:"final", indScore:83, oppScore:71 },
+  { date:"2026-06-06T20:00:00-04:00", opp:"New York Liberty", oppAbbr:"NYL", away:true, venue:"Barclays Center", city:"Brooklyn, NY", tv:["CBS","Paramount+"], status:"final", indScore:75, oppScore:83 },
+  { date:"2026-06-08T19:00:00-04:00", opp:"Washington Mystics", oppAbbr:"WSH", away:true, venue:"CareFirst Arena", city:"Washington, DC", tv:["NBC Sports","Peacock"], status:"final", indScore:78, oppScore:76 },
+  { date:"2026-06-11T19:00:00-04:00", opp:"Chicago Sky", oppAbbr:"CHI", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["Prime Video"], status:"final", indScore:114, oppScore:106 },
+  { date:"2026-06-13T18:00:00-04:00", opp:"Connecticut Sun", oppAbbr:"CON", away:true, venue:"Mohegan Sun Arena", city:"Uncasville, CT", tv:["NBC Sports","Peacock"], status:"final", indScore:85, oppScore:75 },
+  { date:"2026-06-16T19:00:00-04:00", opp:"Toronto Tempo", oppAbbr:"TOR", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network","TSN"], status:"final", indScore:113, oppScore:91 },
+  { date:"2026-06-18T19:30:00-04:00", opp:"Atlanta Dream", oppAbbr:"ATL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["Prime Video"], status:"final", indScore:101, oppScore:108 },
+  { date:"2026-06-20T13:00:00-04:00", opp:"Atlanta Dream", oppAbbr:"ATL", away:true, venue:"State Farm Arena", city:"Atlanta, GA", tv:["ABC"], status:"final", indScore:96, oppScore:113 },
+  { date:"2026-06-22T20:00:00-04:00", opp:"Phoenix Mercury", oppAbbr:"PHX", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network"], status:"final", indScore:86, oppScore:77 },
+  { date:"2026-06-24T19:30:00-04:00", opp:"Phoenix Mercury", oppAbbr:"PHX", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network"], status:"final", indScore:109, oppScore:111 },
+  { date:"2026-06-27T20:00:00-04:00", opp:"Los Angeles Sparks", oppAbbr:"LA", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["CBS","Paramount+"], status:"final", indScore:111, oppScore:87 },
+  { date:"2026-07-05T19:00:00-04:00", opp:"Las Vegas Aces", oppAbbr:"LV", away:true, venue:"T-Mobile Arena", city:"Las Vegas, NV", tv:["ESPN","Disney+"], status:"final", indScore:84, oppScore:68 },
+  { date:"2026-07-08T22:00:00-04:00", opp:"Los Angeles Sparks", oppAbbr:"LA", away:true, venue:"crypto.com Arena", city:"Los Angeles, CA", tv:["USA Network"], status:"final", indScore:92, oppScore:106 },
+  { date:"2026-07-09T22:00:00-04:00", opp:"Phoenix Mercury", oppAbbr:"PHX", away:true, venue:"Mortgage Matchup Center", city:"Phoenix, AZ", tv:["Prime Video"], status:"final", indScore:92, oppScore:89 },
+  { date:"2026-07-12T21:00:00-04:00", opp:"Las Vegas Aces", oppAbbr:"LV", away:true, venue:"Michelob ULTRA Arena", city:"Las Vegas, NV", tv:["NBC Sports","Peacock"], status:"final", indScore:109, oppScore:75 },
+  { date:"2026-07-15T20:00:00-04:00", opp:"Golden State Valkyries", oppAbbr:"GS", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network"], status:"final", indScore:75, oppScore:88 },
+  { date:"2026-07-17T19:30:00-04:00", opp:"Seattle Storm", oppAbbr:"SEA", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ION","WNBA League Pass"], status:"final", indScore:110, oppScore:107 },
+  { date:"2026-07-18T20:00:00-04:00", opp:"New York Liberty", oppAbbr:"NYL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["CBS","Paramount+"], status:"final", indScore:108, oppScore:88 },
+  { date:"2026-07-22T20:00:00-04:00", opp:"Connecticut Sun", oppAbbr:"CON", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["USA Network"], status:"final", indScore:123, oppScore:88 },
+  { date:"2026-07-28T21:30:00-04:00", opp:"Seattle Storm", oppAbbr:"SEA", away:true, venue:"Climate Pledge Arena", city:"Seattle, WA", tv:["ESPN"], status:"final", indScore:105, oppScore:95 },
+  { date:"2026-07-31T22:00:00-04:00", opp:"Portland Fire", oppAbbr:"POR", away:true, venue:"Moda Center", city:"Portland, OR", tv:["ION","WNBA League Pass"], status:"final", indScore:112, oppScore:98 },
+  { date:"2026-08-02T13:00:00-04:00", opp:"Minnesota Lynx", oppAbbr:"MIN", away:true, venue:"Target Center", city:"Minneapolis, MN", tv:["ABC"], status:"final", indScore:100, oppScore:108 },
+  { date:"2026-08-06T19:00:00-04:00", opp:"Las Vegas Aces", oppAbbr:"LV", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["Prime Video"], status:"final", indScore:84, oppScore:86 },
+  { date:"2026-08-08T15:30:00-04:00", opp:"Chicago Sky", oppAbbr:"CHI", away:true, venue:"United Center", city:"Chicago, IL", tv:["ABC"], status:"final", indScore:90, oppScore:86 },
+  { date:"2026-08-11T19:30:00-04:00", opp:"New York Liberty", oppAbbr:"NYL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ESPN"], status:"final", indScore:106, oppScore:92 },
+  { date:"2026-08-14T19:30:00-04:00", opp:"Dallas Wings", oppAbbr:"DAL", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ION","WNBA League Pass"], status:"final", indScore:98, oppScore:87 },
+  { date:"2026-08-16T17:00:00-04:00", opp:"Atlanta Dream", oppAbbr:"ATL", away:true, venue:"State Farm Arena", city:"Atlanta, GA", tv:["ESPN","Disney+"], status:"final", indScore:95, oppScore:91 },
+  { date:"2026-08-18T19:00:00-04:00", opp:"Toronto Tempo", oppAbbr:"TOR", away:true, venue:"Scotiabank Arena", city:"Toronto, ON", tv:["ESPN","TSN"], status:"final", indScore:101, oppScore:95 },
+  { date:"2026-08-20T20:00:00-04:00", opp:"Dallas Wings", oppAbbr:"DAL", away:true, venue:"American Airlines Center", city:"Dallas, TX", tv:["Prime Video"], status:"final", indScore:85, oppScore:91 },
+  { date:"2026-08-22T19:00:00-04:00", opp:"New York Liberty", oppAbbr:"NYL", away:true, venue:"Barclays Center", city:"Brooklyn, NY", tv:["Prime Video"], status:"upcoming" },
+  { date:"2026-08-23T19:00:00-04:00", opp:"Chicago Sky", oppAbbr:"CHI", away:true, venue:"Wintrust Arena", city:"Chicago, IL", tv:["NBC","Peacock"], status:"upcoming" },
+  { date:"2026-08-28T19:30:00-04:00", opp:"Connecticut Sun", oppAbbr:"CON", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ION"], status:"upcoming" },
+  { date:"2026-09-18T19:30:00-04:00", opp:"Toronto Tempo", oppAbbr:"TOR", away:true, venue:"Coca-Cola Coliseum", city:"Toronto, ON", tv:["ION","TSN"], status:"upcoming" },
+  { date:"2026-09-20T16:00:00-04:00", opp:"Washington Mystics", oppAbbr:"WSH", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["NBA TV"], status:"upcoming" },
+  { date:"2026-09-22T20:00:00-04:00", opp:"Minnesota Lynx", oppAbbr:"MIN", away:false, venue:"Gainbridge Fieldhouse", city:"Indianapolis, IN", tv:["ESPN"], status:"upcoming" },
+  { date:"2026-09-24T20:00:00-04:00", opp:"Minnesota Lynx", oppAbbr:"MIN", away:true, venue:"Target Center", city:"Minneapolis, MN", tv:["USA Network"], status:"upcoming" }
+];
+
+/* =====================================================================
+   ANALYTICS — placeholders only. No real IDs are set.
+
+   To add Google Analytics (GA4): paste Google's standard gtag.js
+   loader snippet (the one shown in your GA4 property's Data Streams
+   setup page) as its own <script> tag in the <head>, using your
+   real Measurement ID (looks like G-XXXXXXX).
+
+   To add the Meta Pixel: paste Meta's standard pixel base code
+   snippet as its own <script> tag in the <head>, using your real
+   Pixel ID.
+
+   To add Google Search Console: add the verification meta tag or
+   DNS record it gives you to the <head>.
+
+   Keep any pasted snippet as a separate, top-level <script> tag —
+   do not nest it inside this one.
+===================================================================== */
+
+/* =====================================================================
+   RENDER LAYER
+===================================================================== */
+const $ = sel => document.querySelector(sel);
+const now = new Date();
+
+function nextGame(){
+  return GAMES.find(g => g.status === "upcoming");
+}
+
+function fmtDate(d){
+  return d.toLocaleDateString("en-US", { weekday:"short", month:"short", day:"numeric" }).toUpperCase();
+}
+function fmtTime(d){
+  return d.toLocaleTimeString("en-US", { hour:"numeric", minute:"2-digit", timeZone:"America/New_York" }) + " ET";
+}
+
+function renderHero(){
+  const g = nextGame();
+  if(!g) return;
+  const d = new Date(g.date);
+
+  $("#sb-venue").textContent = g.venue + " · " + g.city;
+  $("#sb-opp-abbr").textContent = g.oppAbbr;
+  $("#sb-opp-name").textContent = g.opp;
+  $("#sb-atvs").textContent = g.away ? "@" : "vs";
+  $("#sb-date").textContent = fmtDate(d);
+  $("#sb-time").textContent = fmtTime(d);
+  $("#sb-watch-text").textContent = g.tv.join(" · ");
+  $("#sb-record").textContent = STANDINGS.wins + "-" + STANDINGS.losses + " this season";
+
+  // countdown
+  function tick(){
+    const diff = d - new Date();
+    if(diff <= 0){
+      $("#sb-tag").textContent = "Tipoff";
+      $("#sb-tag").classList.add("tag-live");
+      $("#countdown").style.visibility = "hidden";
+      clearInterval(timer);
+      return;
+    }
+    const s = Math.floor(diff/1000);
+    const days = Math.floor(s/86400);
+    const hrs = Math.floor((s%86400)/3600);
+    const mins = Math.floor((s%3600)/60);
+    const secs = s%60;
+    $("#cd-d").textContent = String(days).padStart(2,"0");
+    $("#cd-h").textContent = String(hrs).padStart(2,"0");
+    $("#cd-m").textContent = String(mins).padStart(2,"0");
+    $("#cd-s").textContent = String(secs).padStart(2,"0");
+
+    const stickyCd = $("#sticky-cd");
+    if(stickyCd){
+      stickyCd.textContent = days > 0
+        ? `${days}d ${hrs}h`
+        : `${String(hrs).padStart(2,"0")}:${String(mins).padStart(2,"0")}:${String(secs).padStart(2,"0")}`;
+    }
+  }
+  tick();
+  const timer = setInterval(tick, 1000);
+
+  // sticky bar content (static parts)
+  const stickyMatchup = $("#sticky-matchup");
+  if(stickyMatchup) stickyMatchup.textContent = `${g.away ? "@" : "vs"} ${g.oppAbbr} · ${fmtDate(d)}`;
+}
+
+function renderQuickStats(){
+  const g = nextGame();
+  const remaining = GAMES.filter(x => x.status === "upcoming").length;
+  const items = [
+    { num: STANDINGS.wins + "-" + STANDINGS.losses, label:"Record" },
+    { num: ordinal(STANDINGS.conferenceRank) + " East", label:"Conference" },
+    { num: g ? g.oppAbbr : "—", label:"Next Opponent" },
+    { num: remaining, label:"Games Left" }
+  ];
+  $("#quick-stats").innerHTML = items.map(i =>
+    `<div class="stat-card"><div class="stat-num">${i.num}</div><div class="stat-label">${i.label}</div></div>`
+  ).join("");
+}
+function ordinal(n){
+  const s = ["th","st","nd","rd"], v = n % 100;
+  return n + (s[(v-20)%10] || s[v] || s[0]);
+}
+
+function gameCardHTML(g){
+  const d = new Date(g.date);
+  const dateShort = d.toLocaleDateString("en-US", { month:"short", day:"numeric" }).toUpperCase().split(" ");
+  let right = "";
+  if(g.status === "final"){
+    const win = g.indScore > g.oppScore;
+    right = `<span class="badge ${win?"badge-win":"badge-loss"}">${win?"WIN":"LOSS"}</span>
+             <div class="game-score">${g.indScore}-${g.oppScore}</div>`;
+  } else {
+    right = `<span class="badge badge-upcoming">${fmtTime(d)}</span>`;
+  }
+  return `
+    <div class="game-card">
+      <div class="game-card-date">${dateShort[0]}<b>${dateShort[1]}</b></div>
+      <div class="game-card-mid">
+        <div class="game-card-opp">${g.away?"@":"vs"} ${g.opp} <span>(${g.oppAbbr})</span></div>
+        <div class="game-card-meta">${g.venue} · ${g.tv.join(", ")}</div>
+      </div>
+      <div class="game-card-right">${right}</div>
+    </div>`;
+}
+
+function renderSchedule(){
+  const upcoming = GAMES.filter(g => g.status === "upcoming");
+  const results = GAMES.filter(g => g.status === "final").slice().reverse();
+
+  $("#schedule-list-upcoming").innerHTML = upcoming.map(gameCardHTML).join("") ||
+    `<p class="lede">No upcoming games loaded yet.</p>`;
+
+  const INITIAL = 8;
+  let shown = INITIAL;
+  function paintResults(){
+    $("#schedule-list-results").innerHTML = results.slice(0, shown).map(gameCardHTML).join("");
+    $("#load-more-results").style.display = shown < results.length ? "block" : "none";
+  }
+  paintResults();
+  $("#load-more-results").addEventListener("click", () => {
+    shown += 10;
+    paintResults();
+  });
+
+  const tabUpcoming = $("#tab-upcoming");
+  const tabResults = $("#tab-results");
+  const panelUpcoming = $("#schedule-list-upcoming");
+  const panelResults = $("#schedule-list-results");
+  const loadMore = $("#load-more-results");
+
+  tabUpcoming.addEventListener("click", () => {
+    tabUpcoming.setAttribute("aria-selected","true");
+    tabResults.setAttribute("aria-selected","false");
+    panelUpcoming.style.display = "block";
+    panelResults.style.display = "none";
+    loadMore.style.display = "none";
+  });
+  tabResults.addEventListener("click", () => {
+    tabResults.setAttribute("aria-selected","true");
+    tabUpcoming.setAttribute("aria-selected","false");
+    panelResults.style.display = "block";
+    panelUpcoming.style.display = "none";
+    loadMore.style.display = shown < results.length ? "block" : "none";
+  });
+}
+
+function renderRecentResults(){
+  const results = GAMES.filter(g => g.status === "final").slice().reverse().slice(0,5);
+  $("#recent-results").innerHTML = results.map(g => {
+    const win = g.indScore > g.oppScore;
+    const d = new Date(g.date);
+    return `
+      <div class="result-card">
+        <span class="badge ${win?"badge-win":"badge-loss"}">${win?"WIN":"LOSS"}</span>
+        <div class="result-score">${g.indScore}-${g.oppScore}</div>
+        <div class="result-opp">${g.away?"@":"vs"} ${g.oppAbbr}</div>
+        <div class="result-date">${fmtDate(d)}</div>
+      </div>`;
+  }).join("");
+}
+
+/* ---------------------------------------------------------
+   ADD TO CALENDAR (.ics download)
+--------------------------------------------------------- */
+function icsEscape(str){
+  return String(str).replace(/([,;])/g, "\\$1");
+}
+function toICSDate(d){
+  return d.toISOString().replace(/[-:]/g, "").split(".")[0] + "Z";
+}
+function downloadICS(g){
+  const start = new Date(g.date);
+  const end = new Date(start.getTime() + 2.5 * 60 * 60 * 1000); // ~2.5h game length
+  const title = `Indiana Fever ${g.away ? "@" : "vs"} ${g.opp}`;
+  const desc = `Watch on: ${g.tv.join(", ")}`;
+  const ics = [
+    "BEGIN:VCALENDAR",
+    "VERSION:2.0",
+    "PRODID:-//Fever Watch//Schedule//EN",
+    "BEGIN:VEVENT",
+    `UID:${g.date}-${g.oppAbbr}@feverwatch.example.com`,
+    `DTSTAMP:${toICSDate(new Date())}`,
+    `DTSTART:${toICSDate(start)}`,
+    `DTEND:${toICSDate(end)}`,
+    `SUMMARY:${icsEscape(title)}`,
+    `DESCRIPTION:${icsEscape(desc)}`,
+    `LOCATION:${icsEscape(g.venue + ", " + g.city)}`,
+    "END:VEVENT",
+    "END:VCALENDAR"
+  ].join("\r\n");
+
+  const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `fever-vs-${g.oppAbbr.toLowerCase()}.ics`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+/* ---------------------------------------------------------
+   SHARE (Web Share API with clipboard fallback)
+--------------------------------------------------------- */
+async function shareGame(g){
+  const d = new Date(g.date);
+  const text = `Indiana Fever ${g.away ? "@" : "vs"} ${g.opp} — ${fmtDate(d)}, ${fmtTime(d)}`;
+  const url = window.location.href;
+  const btn = $("#btn-share");
+  const label = $("#share-btn-text");
+
+  if(navigator.share){
+    try{
+      await navigator.share({ title: "Fever Watch", text, url });
+    }catch(e){ /* user cancelled — no-op */ }
+    return;
+  }
+
+  try{
+    await navigator.clipboard.writeText(`${text} — ${url}`);
+    if(btn && label){
+      btn.classList.add("copied");
+      const prev = label.textContent;
+      label.textContent = "Link Copied!";
+      setTimeout(() => { btn.classList.remove("copied"); label.textContent = prev; }, 2000);
+    }
+  }catch(e){ /* clipboard unavailable — silently ignore */ }
+}
+
+function initQuickActions(){
+  const g = nextGame();
+  if(!g) return;
+  const calBtn = $("#btn-add-calendar");
+  const shareBtn = $("#btn-share");
+  if(calBtn) calBtn.addEventListener("click", () => downloadICS(g));
+  if(shareBtn) shareBtn.addEventListener("click", () => shareGame(g));
+}
+
+/* ---------------------------------------------------------
+   STICKY MINI COUNTDOWN BAR
+   Shows once the main scoreboard scrolls out of view, so the
+   next-game info is always one glance away.
+--------------------------------------------------------- */
+function initStickyBar(){
+  const scoreboard = $("#next-game");
+  const bar = $("#sticky-bar");
+  const g = nextGame();
+  if(!scoreboard || !bar || !g) return;
+
+  $("#sticky-tag").textContent = g.status === "upcoming" ? "Next Game" : "Next Game";
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        bar.classList.toggle("visible", !entry.isIntersecting && entry.boundingClientRect.top < 0);
+      });
+    },
+    { threshold: 0 }
+  );
+  observer.observe(scoreboard);
+}
+
+/* ---------------------------------------------------------
+   STRUCTURED DATA (JSON-LD) — helps Google show the next
+   game as a rich result. Invisible to visitors, zero friction.
+--------------------------------------------------------- */
+function injectStructuredData(){
+  const g = nextGame();
+  if(!g) return;
+  const start = new Date(g.date);
+  const homeTeam = g.away ? g.opp : TEAM.name;
+  const awayTeam = g.away ? TEAM.name : g.opp;
+
+  const data = {
+    "@context": "https://schema.org",
+    "@type": "SportsEvent",
+    "name": `${TEAM.name} ${g.away ? "@" : "vs"} ${g.opp}`,
+    "startDate": start.toISOString(),
+    "location": {
+      "@type": "Place",
+      "name": g.venue,
+      "address": g.city
+    },
+    "homeTeam": { "@type": "SportsTeam", "name": homeTeam },
+    "awayTeam": { "@type": "SportsTeam", "name": awayTeam },
+    "sport": "Basketball",
+    "eventStatus": "https://schema.org/EventScheduled"
+  };
+
+  const script = document.createElement("script");
+  script.type = "application/ld+json";
+  script.textContent = JSON.stringify(data);
+  document.head.appendChild(script);
+}
+
+renderHero();
+renderQuickStats();
+renderSchedule();
+renderRecentResults();
+initQuickActions();
+initStickyBar();
+injectStructuredData();
+</script>
+
+</body>
+</html>
