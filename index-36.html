@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fan Hub — Pick Your Team</title>
+<meta name="description" content="Schedules, live scores and results for your favorite US sports team, all in one place. Pick your team to get started.">
+<link rel="canonical" href="https://example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fan Hub — Pick Your Team">
+<meta property="og:description" content="Schedules, live scores and results for your favorite US sports team, all in one place.">
+<meta property="og:site_name" content="Fan Hub">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0a0a0c;
+    --bg-elevated: #131217;
+    --surface: #1b1a20;
+    --surface-2: #232129;
+    --border: #2d2b34;
+    --white: #f7f5f1;
+    --muted: #9c9aa5;
+    --muted-2: #6f6d78;
+    --flame-1: #ff5a36;
+    --flame-2: #ffc24b;
+    --focus: #ffc24b;
+
+    --font-display: 'Anton', sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
+    --font-mono: 'IBM Plex Mono', monospace;
+
+    --radius: 14px;
+    --radius-sm: 8px;
+    --container: 640px;
+  }
+
+  *{ box-sizing: border-box; }
+  html{ scroll-behavior: smooth; }
+  body{
+    margin:0;
+    background: var(--bg);
+    color: var(--white);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+  }
+  a{ color: inherit; text-decoration: none; }
+  :focus-visible{ outline: 3px solid var(--focus); outline-offset: 2px; }
+  @media (prefers-reduced-motion: reduce){
+    *{ animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+  }
+
+  .wrap{ max-width: var(--container); margin: 0 auto; padding: 0 20px; }
+
+  /* Topbar */
+  .topbar{
+    position: sticky; top:0; z-index: 40;
+    background: rgba(10,10,12,0.85);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+  }
+  .topbar .wrap{ display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; }
+  .brand{ display:flex; align-items:center; gap:8px; font-family: var(--font-display); font-size: 18px; letter-spacing: 0.02em; }
+  .brand-mark{
+    width:26px; height:26px; border-radius:7px; flex-shrink:0;
+    background: linear-gradient(135deg, var(--flame-1), var(--flame-2));
+  }
+
+  /* Hero */
+  .hero{ padding: 36px 0 8px; }
+  .eyebrow{
+    font-family: var(--font-mono); text-transform: uppercase;
+    letter-spacing: 0.14em; font-size: 12px; font-weight: 600;
+    color: var(--flame-2); margin: 0 0 8px;
+  }
+  .h1{
+    font-family: var(--font-display); font-size: 40px; line-height: 1.02;
+    letter-spacing: 0.01em; margin: 0 0 12px; text-transform: uppercase;
+  }
+  .lede{ color: var(--muted); font-size: 15px; margin: 0 0 22px; max-width: 46ch; }
+
+  /* Search */
+  .search-wrap{ position: relative; margin-bottom: 28px; }
+  .search-input{
+    width:100%;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--white);
+    font-family: var(--font-body);
+    font-size: 15px;
+    padding: 14px 16px 14px 44px;
+    border-radius: var(--radius-sm);
+  }
+  .search-input::placeholder{ color: var(--muted-2); }
+  .search-input:focus{ border-color: var(--flame-2); outline: none; }
+  .search-icon{
+    position:absolute; left:14px; top:50%; transform: translateY(-50%);
+    width:18px; height:18px; color: var(--muted-2); pointer-events:none;
+  }
+
+  /* Tier sections */
+  .tier-section{ padding: 6px 0 30px; }
+  .tier-head{ display:flex; align-items:baseline; gap:10px; margin-bottom:14px; }
+  .tier-label{
+    font-family: var(--font-display); font-size: 22px; text-transform: uppercase;
+    letter-spacing: 0.02em;
+  }
+  .tier-sub{ font-family: var(--font-mono); font-size: 11px; color: var(--muted-2); text-transform: uppercase; letter-spacing: 0.08em; }
+
+  .team-grid{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+  }
+
+  .team-card{
+    position: relative;
+    display:flex; flex-direction:column; gap:10px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 14px;
+    overflow:hidden;
+    transition: border-color .15s ease, transform .1s ease;
+  }
+  .team-card:hover{ border-color: var(--card-color, var(--flame-2)); }
+  .team-card:active{ transform: scale(0.98); }
+  .team-card::before{
+    content:"";
+    position:absolute; top:0; left:0; right:0; height:4px;
+    background: linear-gradient(90deg, var(--card-color, var(--flame-1)), var(--card-color-alt, var(--flame-2)));
+  }
+  .team-card .league-badge{
+    align-self:flex-start;
+    font-family: var(--font-mono);
+    font-size: 9.5px; font-weight:600; letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--muted);
+    background: var(--surface-2);
+    border-radius: 999px;
+    padding: 3px 8px;
+  }
+  .team-card .team-name{
+    font-family: var(--font-display);
+    font-size: 17px;
+    text-transform: uppercase;
+    line-height: 1.1;
+  }
+  .team-card .team-city{
+    font-family: var(--font-mono);
+    font-size: 11px;
+    color: var(--muted-2);
+  }
+
+  .empty-note{
+    font-family: var(--font-mono);
+    font-size: 12.5px;
+    color: var(--muted-2);
+    padding: 18px 0;
+    display:none;
+  }
+
+  footer{ border-top: 1px solid var(--border); padding: 26px 0 40px; margin-top: 10px; }
+  .footer-disclaimer{ color: var(--muted-2); font-size: 11.5px; line-height:1.6; margin: 0 0 8px; }
+  .footer-links{ font-family: var(--font-mono); font-size: 11px; color: var(--muted-2); }
+
+  @media (min-width: 600px){
+    .h1{ font-size: 52px; }
+    .team-grid{ grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); }
+  }
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <div class="brand"><span class="brand-mark" aria-hidden="true"></span> Fan Hub</div>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="eyebrow">2026 Season</p>
+      <h1 class="h1">Pick Your Team</h1>
+      <p class="lede">Schedules, live scores and results — pick a team below to get the next game, TV info and recent results.</p>
+
+      <div class="search-wrap">
+        <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.35-4.35"/></svg>
+        <input type="search" class="search-input" id="team-search" placeholder="Search a team or city…" aria-label="Search teams">
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <p class="empty-note" id="empty-note">No teams match that search.</p>
+  </div>
+
+  <div id="tier-sections"></div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="footer-disclaimer">Independent fan network. Not affiliated with or endorsed by any team, league, or governing body. All game data sourced from official and publicly available schedules.</p>
+    <p class="footer-links">Fan Hub &middot; 2026</p>
+  </div>
+</footer>
+
+<script src="/teams.js"></script>
+<script>
+const TIER_META = {
+  S:        { label: "Tier S", sub: "Highest passion + strongest local identity" },
+  A:        { label: "Tier A", sub: "Big, engaged, regionally rooted fanbases" },
+  LAUNCHED: { label: "Live Now", sub: "Fully built and tracking live" }
+};
+
+// Order tiers deliberately (object key order in JS isn't guaranteed
+// to match insertion for all cases, so we control it explicitly).
+const TIER_ORDER = ["LAUNCHED", "S", "A"];
+
+function teamCardHTML(t){
+  return `
+    <a class="team-card" href="/team.html?team=${encodeURIComponent(t.slug)}"
+       style="--card-color:${t.colorPrimary};--card-color-alt:${t.colorAlt};">
+      <span class="league-badge">${t.leagueLabel}</span>
+      <span class="team-name">${t.name}</span>
+      <span class="team-city">${t.city}</span>
+    </a>`;
+}
+
+function renderTiers(filterText){
+  const teams = window.TEAMS || [];
+  const q = (filterText || "").trim().toLowerCase();
+  const filtered = q
+    ? teams.filter(t =>
+        t.name.toLowerCase().includes(q) ||
+        t.city.toLowerCase().includes(q) ||
+        t.shortName.toLowerCase().includes(q) ||
+        t.leagueLabel.toLowerCase().includes(q))
+    : teams;
+
+  const container = document.getElementById("tier-sections");
+  const emptyNote = document.getElementById("empty-note");
+
+  if(filtered.length === 0){
+    container.innerHTML = "";
+    emptyNote.style.display = "block";
+    return;
+  }
+  emptyNote.style.display = "none";
+
+  container.innerHTML = TIER_ORDER.map(tierKey => {
+    const inTier = filtered.filter(t => t.tier === tierKey);
+    if(inTier.length === 0) return "";
+    const meta = TIER_META[tierKey] || { label: tierKey, sub: "" };
+    return `
+      <section class="tier-section">
+        <div class="wrap">
+          <div class="tier-head">
+            <span class="tier-label">${meta.label}</span>
+            <span class="tier-sub">${meta.sub}</span>
+          </div>
+          <div class="team-grid">
+            ${inTier.map(teamCardHTML).join("")}
+          </div>
+        </div>
+      </section>`;
+  }).join("");
+}
+
+renderTiers("");
+
+const searchInput = document.getElementById("team-search");
+searchInput.addEventListener("input", (e) => renderTiers(e.target.value));
+</script>
+</body>
+</html>
